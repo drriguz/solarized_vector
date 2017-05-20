@@ -1,0 +1,133 @@
+$base03: #002b36;
+$base02: #073642;
+$base01: #586e75;
+$base00: #657b83;
+$base0: #839496;
+$base1: #93a1a1;
+$base2: #eee8d5;
+$base3: #fdf6e3;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
+html * {
+    color-profile: sRGB;
+    rendering-intent: auto;
+}
+
+body {
+    background: $base03;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $base0;
+}
+
+a,
+.mw-body a.external,
+.mw-body a.extiw,
+// sidebar links
+div#mw-panel div.portal div.body ul li a,
+// header tab links
+div.vectorTabs ul li a,
+div.vectorTabs li.new a {
+    color: $orange;
+    &:visited {
+        color: $orange;
+    }
+}
+
+// user profile link
+#p-personal a.new {
+    color: $magenta;
+}
+
+// sidebar toolbox
+div#mw-panel div.portal {
+    background: none;
+    h3 {
+        color: $base1;
+    }
+}
+
+.mw-body {
+    color: $base0;
+    background: none;
+    border: 1px solid $base02;
+}
+// code & pre
+.mw-highlight {
+    background: none;
+}
+
+pre,
+.mw-code {
+    background: $base02;
+    color: $base2;
+    border: 0;
+}
+// category box
+.catlinks{
+    background: $base02;
+    border: 0;
+}
+// footer text
+div#footer ul li {
+    color: $base1;
+}
+
+// header background
+#mw-page-base {
+    background: none;
+}
+
+// header tabs
+div.vectorTabs {
+    background: none;
+    ul li,
+    ul,
+    li,
+    span {
+        background: none;
+    }
+    li.selected {
+        background: $base02;
+        a,
+        a:visited {
+            color: $cyan;
+        }
+    }
+}
+
+// header dropdown menu text
+div#mw-head div.vectorMenu h3 {
+    background: none;
+    span {
+        color: $base2;
+    }
+}
+
+input,
+textarea,
+// search input box at top right
+div#simpleSearch input {
+    background-color: $base02;
+    color: $base3;
+}
+
+div#simpleSearch {
+    border: 0;
+    background: none;
+    #searchInput {
+        padding: 0;
+    }
+}
